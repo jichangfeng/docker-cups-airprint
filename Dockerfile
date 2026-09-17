@@ -59,7 +59,7 @@ RUN apt update && apt install -y \
 && apt clean \
 && rm -rf /var/lib/apt/lists/*
 RUN python3 -m venv /root/airprint-generate
-RUN /root/airprint-generate/bin/pip install pycups==2.0.1
+RUN /root/airprint-generate/bin/pip install pycups==2.0.4
 RUN wget https://raw.githubusercontent.com/tjfontaine/airprint-generate/master/airprint-generate.py -O /root/airprint-generate.py
 RUN chmod +x /root/airprint-generate.py
 

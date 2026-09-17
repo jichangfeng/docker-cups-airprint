@@ -10,6 +10,8 @@ fi
 if [ -f /run/dbus/pid ]; then
     rm -f /run/dbus/pid
 fi
+
+mkdir -p /run/dbus
 dbus-daemon --system
 if [ -f /run/avahi-daemon/pid ]; then
     rm -f /run/avahi-daemon/pid
